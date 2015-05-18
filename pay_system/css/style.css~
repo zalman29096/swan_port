@@ -1,0 +1,74 @@
+#total-price{
+	position:fixed;
+	top:0;
+	left : 87%;
+	z-index:100;
+}
+#CCPayForm input{
+	margin  : 10px;
+}
+#check,
+#to-main-form,
+#to-checkout{
+	margin: 20 auto;
+	display: block;
+}
+#check-info,
+#submit, #payment{
+	display : none;
+}
+.cats
+{
+
+	margin-top : 20px;
+	position: relative;
+	left : 5%;
+
+}
+
+.step-header{
+	margin-top : 10px;
+	margin-bottom : 20px;
+	text-align : left;
+
+}
+label{
+	margin : 15px;
+	font-size : 20px;
+}
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+hr{
+	border-color : #1D3CB8;
+}
+
+#woman-info{
+	position : relative;
+	left : 20%;
+	margin-bottom: 20px;
+}
+#contact-info,#man-info{
+	position : relative;
+	left : 2%;
+	margin-bottom: 20px;
+}
+
+#third-step,
+#second-step{
+	display  : flex;
+}
+.step{
+	box-shadow : inset 0px 11px 10px -10px black,
+        	inset 0px -11px 10px -10px black;
+	background-color : #F0F0F0;
+}
+.info-input{
+	margin-left : 10%;
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+h2{
+	margin-left : 3%;
+}

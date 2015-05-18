@@ -1,0 +1,49 @@
+[
+    {
+        "name": "rkioski/checkout-finland-api-client",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/rkioski/CheckoutAPIClient.git",
+            "reference": "7b39baf838bec99d3e6e2ad79edd7ebbfd61c77c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/rkioski/CheckoutAPIClient/zipball/7b39baf838bec99d3e6e2ad79edd7ebbfd61c77c",
+            "reference": "7b39baf838bec99d3e6e2ad79edd7ebbfd61c77c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "phpspec/phpspec": "2.0.1"
+        },
+        "time": "2014-11-13 09:51:39",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "CheckoutFinland\\": "src/CheckoutFinland"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matti Särkikoski",
+                "email": "rkioski@gmail.com",
+                "homepage": "https://github.com/rkioski"
+            }
+        ],
+        "description": "API client for the payment gateway of Checkout Finland Oy.",
+        "keywords": [
+            "Checkout Finland",
+            "api",
+            "payment gateway"
+        ]
+    }
+]

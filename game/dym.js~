@@ -1,0 +1,13 @@
+function draw(x,y){
+	document.all[this.divName].style.left = x;
+	document.all[this.divName].style.top = y; 
+}
+
+function dym(x, y, img, divName){
+	this.x=x;
+	this.y=y;
+	this.image = img;
+	this.number = 0;
+	this.div = divName;
+	this.drawDym=draw();
+}
