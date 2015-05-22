@@ -1,0 +1,29 @@
+<html>
+<body style = "overflow : hidden">
+<div id="submarine_div" style="position: absolute; top: 110; left: 110;">
+	<img src="img/podlodka_right.gif" name="slide">
+</div>
+<script language="JavaScript">
+
+/*Creating all bubbles*/
+
+function bubble_create(image, nameDiv){
+
+	for(i=0;i<60;i=i+3){
+		document.writeln("<div id=\"" + nameDiv + i + "\" style=\"position: absolute;\">");
+		document.writeln("<img src=\"" + image + "\"></div>");
+	}
+}
+
+bubble_create("img/mal_puz.gif","puz");
+bubble_create("img/sred_puz.gif","puza");
+bubble_create("img/big_puz.gif","puzb"); 
+</script>
+<script src="engine/Bubble.js">
+</script>
+<script src="engine/submarine.js">
+</script>
+<script src="engine/bubbles.js">
+</script>
+</body>
+</html>

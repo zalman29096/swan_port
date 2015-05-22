@@ -1,27 +1,24 @@
-var koordinata=15;
+var submarineCoordinate=15;
 var x=0;
 var y=500;
 var stepX=4;
 var stepY=0;
-var massivKartinok=new Array();
-var a=new Array();
-var s=new Array();
-var p=0;
+var imagesArray=new Array();
 var mousex=10;
 var mousey=10;
-var uskorenieX=0;
-var uskorenieY=0;
+var accelerationX=0;
+var accelerationY=0;
 var ex=0;
 var ey=0;
 var stepShift=0;
-function animate(){
-	stepX=stepX+uskorenieX-0.035*stepX;
-	stepY=stepY+uskorenieY-0.035*stepY;
+function animateSubmarine(){
+	stepX=stepX+accelerationX-0.035*stepX;
+	stepY=stepY+accelerationY-0.035*stepY;
 	x=x+stepX;
 	y=y+stepY;
 	sectorCount();
-	podvlodka.style.top=y;	
-	podvlodka.style.left=x;	 
+	submarine_div.style.top=y;	
+	submarine_div.style.left=x;	 
 }
 
 function moveMouse(event){
@@ -43,48 +40,48 @@ if (navigator.userAgent.indexOf("MSIE") == -1){
 	document.onmousemove=moveMouseIE;
 }
 
-function podlodkaVlevo(rMouseX){
-	uskorenieX=-0.001*rMouseX;
+function submarineMoveLeft(rMouseX){
+	accelerationX=-0.001*rMouseX;
 	stepShift=-0.1;
-	slide.src="podlodka_left.gif";
-	koordinata=150;
+	slide.src="img/podlodka_left.gif";
+	submarineCoordinate=150;
 }
-function podlodkaVpravo(rMouseX){
-	uskorenieX=0.001*rMouseX;
+function submarineMoveRight(rMouseX){
+	accelerationX=0.001*rMouseX;
 	stepShift=0.1;
-	slide.src="podlodka_right.gif";
-	koordinata=15;
+	slide.src="img/podlodka_right.gif";
+	submarineCoordinate=15;
 }
 function sectorCount(){
 	var ex=Math.abs(mousex-x);
 	var ey=Math.abs(mousey-y);
 	if(ex<=16 && mousey<=y){
-		uskorenieY=-0.001*ey;	
+		accelerationY=-0.001*ey;	
 	}
 	if(mousex+16<=x && mousey+16<=y){
-		podlodkaVlevo(ex);
-		uskorenieY=-0.001*ey;	
+		submarineMoveLeft(ex);
+		accelerationY=-0.001*ey;	
 	}
 	if(ey<=16 && mousex<=x){
-		podlodkaVlevo(ex);
+		submarineMoveLeft(ex);
 	}
 	if(mousex+16<=x && mousey-16>y){
-		podlodkaVlevo(ex);
-		uskorenieY=0.001*ey;
+		submarineMoveLeft(ex);
+		accelerationY=0.001*ey;
 	}
 	if(ex<=16 && mousey>y){
-		uskorenieY=0.001*ey;
+		accelerationY=0.001*ey;
 	}
 	if(mousex-16>x && mousey-16>y){
-		podlodkaVpravo(ex);
-		uskorenieY=0.001*ey;	
+		submarineMoveRight(ex);
+		accelerationY=0.001*ey;	
 	} 
 	if(ey<=16 && mousex>x){
-		podlodkaVpravo(ex);
+		submarineMoveRight(ex);
 	}
 	if(mousex-16>x && mousey+16<=y){
-		podlodkaVpravo(ex);
-		uskorenieY=-0.001*ey;
+		submarineMoveRight(ex);
+		accelerationY=-0.001*ey;
 	}
 	if(Math.abs(stepX)<1 && ex<16){
 		stepX=0;          	
@@ -93,7 +90,7 @@ function sectorCount(){
 		stepY=0;          	
 	}
 }
-setInterval("animate()",10);
+setInterval("animateSubmarine()",10);
 
 
 	
