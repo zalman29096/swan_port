@@ -4,7 +4,8 @@
 #include <quazip.h>
 #include <QListWidget>
 #include <QIODevice>
-
+#include <QFileDialog>
+#include <QFileInfo>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -19,10 +20,13 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-QuaZip temp("test.zip"); //creation of quazip object
 
 void MainWindow::on_pushButton_clicked()
 {
+    QFileDialog *dialog = new QFileDialog();
+    QString path =  dialog->getOpenFileName();
+    QuaZip temp(path); //creation of quazip object
+
     temp.open(QuaZip::mdUnzip); //opening file in given mode
 
     for (bool f = temp.goToFirstFile(); f; f=temp.goToNextFile()){ //loop, going from first to last file in archive
