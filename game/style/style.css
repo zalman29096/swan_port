@@ -1,0 +1,12 @@
+body{
+	background-image : url(fon1.jpg);
+	 -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+#canon{
+	position : absolute;
+	top : 100%;
+ 
+}
