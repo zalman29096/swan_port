@@ -9,7 +9,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 $token = $_GET['token'];
 $fields = get_all('token',$token,false);
-//***********************************************************	$paymentDetails= new PaymentDetailsType();
+//***********************************************************	
 	$i = 0;
 	$itemQuantity = '1';
 	$itemTotalValue = 0;
