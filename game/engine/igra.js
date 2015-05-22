@@ -25,12 +25,12 @@ var spaceRepeated=false;
 
 
 
-samolety.add(new samolet("samolet0", "sambik0", "../img/messer.gif", "../img/messer_right.gif", 113, 26, 5, 10, 5, false,0));
-samolety.add(new samolet("samolet1", "sambik1", "../img/kukuruznik.gif", "../img/kukuruznik(right).gif", 120, 45, 3, 5, 0, false,1));
-samolety.add(new samolet("samolet2", "sambik2", "../img/reactiv.gif", "../img/reactiv(right).gif", 174, 35, 6, 15, 0, false,2));
-samolety.add(new samolet("samolet3", "sambik3", "../img/messer.gif", "../img/messer_right.gif", 113, 26, 4, 10, 5, false,3));
-samolety.add(new samolet("samolet5", "sambik5", "../img/reactiv.gif", "../img/reactiv(right).gif", 174, 35, 7, 15, 0, false,4));
-samolety.add(new samolet("samolet6", "sambik6", "../img/passPlane1.gif", "../img/passPlane(right).gif", 174, 35, 4, -100, 0, false,5));
+samolety.add(new samolet("samolet0", "sambik0", "img/messer.gif", "img/messer_right.gif", 113, 26, 5, 10, 5, false,0));
+samolety.add(new samolet("samolet1", "sambik1", "img/kukuruznik.gif", "img/kukuruznik(right).gif", 120, 45, 3, 5, 0, false,1));
+samolety.add(new samolet("samolet2", "sambik2", "img/reactiv.gif", "img/reactiv(right).gif", 174, 35, 6, 15, 0, false,2));
+samolety.add(new samolet("samolet3", "sambik3", "img/messer.gif", "img/messer_right.gif", 113, 26, 4, 10, 5, false,3));
+samolety.add(new samolet("samolet5", "sambik5", "img/reactiv.gif", "img/reactiv(right).gif", 174, 35, 7, 15, 0, false,4));
+samolety.add(new samolet("samolet6", "sambik6", "img/passPlane1.gif", "img/passPlane(right).gif", 174, 35, 4, -100, 0, false,5));
 
 
 	
@@ -42,10 +42,10 @@ for (var i=0; i<4; i++){
 	birds.add(new bird("ptica" + i, "polet" + i));
 }
 
-oblaka.add(new samolet("cloud0", "fly0", "../img/oblako1.gif", "../img/oblako1.gif", 200, 118, 0.3+0.1*j, 0, 0, true));
-oblaka.add(new samolet("cloud1", "fly1", "../img/oblako2.gif", "../img/oblako2.gif", 200, 118, 0.3+0.1*j, 0, 0, true));
-oblaka.add(new samolet("cloud2", "fly2", "../img/oblako1.gif", "../img/oblako1.gif", 200, 118, 0.3+0.1*j, 0, 0, true));
-oblaka.add(new samolet("cloud3", "fly3", "../img/oblako2.gif", "../img/oblako2.gif", 170, 53, 0.3+0.1*j, 0, 0, true));
+oblaka.add(new samolet("cloud0", "fly0", "img/oblako1.gif", "img/oblako1.gif", 200, 118, 0.3+0.1*j, 0, 0, true));
+oblaka.add(new samolet("cloud1", "fly1", "img/oblako2.gif", "img/oblako2.gif", 200, 118, 0.3+0.1*j, 0, 0, true));
+oblaka.add(new samolet("cloud2", "fly2", "img/oblako1.gif", "img/oblako1.gif", 200, 118, 0.3+0.1*j, 0, 0, true));
+oblaka.add(new samolet("cloud3", "fly3", "img/oblako2.gif", "img/oblako2.gif", 170, 53, 0.3+0.1*j, 0, 0, true));
 
 
 

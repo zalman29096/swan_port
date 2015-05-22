@@ -4,7 +4,7 @@ This may be used to create smoke after hitting plane
 */
 function create(){
 	this.element = document.createElement('div');
-	this.element.innerHTML = "<img src='../img/dym.png'>";
+	this.element.innerHTML = "<img src='img/dym.png'>";
 	this.element.style.width = 20;
 	this.element.style.height = 20;
 	this.element.style.position = 'absolute';

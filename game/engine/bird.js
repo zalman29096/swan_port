@@ -11,8 +11,8 @@ function drawBird(){
 }
 
 function changeSrc(This){
-	if (This.isUp) document.all[This.imgName].src="../img/birdDown.gif";
-	else  		   document.all[This.imgName].src="../img/birdUp.gif";
+	if (This.isUp) document.all[This.imgName].src="img/birdDown.gif";
+	else  		   document.all[This.imgName].src="img/birdUp.gif";
 	This.isUp=!This.isUp;
 	This.imgChangeTimer.start(20);
 }

@@ -85,14 +85,14 @@ function pushka(x,y){
 	this.bahTimerDelay=100;
 	this.ugol=0;
 	this.rightStvolPos=new Array(
-		new stvolPos(61, 7, 9, -11, "../img/pushka1p.gif"),
-		new stvolPos(52, 1, 5.5, -11, "../img/pushka2p.gif"),
-		new stvolPos(42, -5, 2.2, -11, "../img/pushka3p.gif")
+		new stvolPos(61, 7, 9, -11, "img/pushka1p.gif"),
+		new stvolPos(52, 1, 5.5, -11, "img/pushka2p.gif"),
+		new stvolPos(42, -5, 2.2, -11, "img/pushka3p.gif")
 	);
 	this.leftStvolPos=new Array(
-		new stvolPos(24, 7, -9, -11, "../img/pushka1l.gif"),
-		new stvolPos(34, 1, -5.5, -11, "../img/pushka2l.gif"),
-		new stvolPos(45, -5, -2.2, -11, "../img/pushka3l.gif") 
+		new stvolPos(24, 7, -9, -11, "img/pushka1l.gif"),
+		new stvolPos(34, 1, -5.5, -11, "img/pushka2l.gif"),
+		new stvolPos(45, -5, -2.2, -11, "img/pushka3l.gif") 
 	);
 	this.recoveryTimer=new timer(recover, this);
 	this.fireTimer=new timer(fire, this)

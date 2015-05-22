@@ -23,7 +23,7 @@ function vzriv(){
 	this.nomerKartinki=0;
 	this.massivKartinok=new Array();
 	for (var j=0; j<3; j++){
-		this.massivKartinok[j]="../img/vzryv" + j + ".gif";
+		this.massivKartinok[j]="img/vzryv" + j + ".gif";
 	}
 	this.bah=bah;
 	this.animateTimer=new timer(animateVzriv, this);
